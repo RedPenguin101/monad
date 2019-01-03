@@ -37,25 +37,23 @@ def create_monad_CLI():
         text = file.read()
 
     m1 = Monad(title, text)
-    print(m1.title, m1.text)
-
-    mon_list = get_monad_list()
-
-    mon_list.append(m1)
-
-    for mon in mon_list:
-        print([mon.title,mon.text])
-    with open('monad_master.json','w') as file:
-        json.dump(mon_list, file, default=encode_monad)
+    commit_monad(m1)
 
 def get_monad_list():
     with open('monad_master.json','r') as file:
         mon_list = json.load(file, object_hook=decode_monad)
     return mon_list
 
+def save_monad_master(mon_list):
+    with open('monad_master.json','w') as file:
+        json.dump(mon_list, file, default=encode_monad)
+
 def print_monad_list():
     mon_list = get_monad_list()
     for mon in mon_list:
         print(mon.title)
     
-
+def commit_monad(monad):
+    monlist = get_monad_list()
+    monlist.append(monad)
+    save_monad_master(monlist)
