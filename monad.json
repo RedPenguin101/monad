@@ -1,0 +1,12 @@
+[
+    {
+        "__monad__": true,
+        "title": "test title1",
+        "text": "testtex1t"
+    },
+    {
+        "__monad__": true,
+        "title": "titletest2",
+        "text": "testtext2"
+    }
+]
