@@ -1,0 +1,7 @@
+URWID
+Basic window will have a header title, a block of text, buttons for
+links and buttons for editing and saving 
+
+MONAD CLASS
+have to be able to save to a database
+

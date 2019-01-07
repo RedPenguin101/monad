@@ -23,6 +23,8 @@ functions for:
 	
 Plans for the future:
 1. Write some Monads
+2. Create 'version control' functionality, where you can look at the history of a monad
+2. Implement widgets 
 2. Create a simple viewer (in either Urwid or web based using Flask)
 3. Monads will dynamically connect together based on tags or content 
 4. A spaced repetition module, where flashcards associated with the monad are given at spaced intervals
